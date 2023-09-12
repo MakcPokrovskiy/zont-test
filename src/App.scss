@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  .wrapper-application {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    width: 400px;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 25px;
+    background-color: orange;
+  }
+
+  .click-info {
+    position: relative;
+    padding: 20px 0 20px 80px;
+    font-size: 25px;
+    color: #6060d2;
+    background: #e2f5f5;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+      width: 32px;
+      height: 30px;
+      margin: 20px 0 0 35px;
+      background-image: url("img/circle.jpeg");
+      background-size: cover;
+    }
+  }
+
+  .click-info-server {
+    position: relative;
+    height: 55px;
+    border-bottom: 1px solid red;
+    padding-left: 80px;
+    font-size: 25px;
+    color: #b59055;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+      width: 35px;
+      height: 30px;
+      margin-left: 35px;
+      background-image: url("img/triangle.jpg");
+      background-size: cover;
+    }
+  }
+}
